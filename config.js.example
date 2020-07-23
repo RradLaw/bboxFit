@@ -1,0 +1,8 @@
+module.exports = {
+    latMin: 0, //minimum latitude co-ordinate for the boxes (float)
+    latMax: 0, //maximum latitude co-ordinate for the boxes (float)
+    lonMin: 0, //minimum longitude co-ordinate for the boxes (float)
+    lonMax: 0, //maximum longitude co-ordinate for the boxes (float)
+    boxes: 0, //how many boxes to draw (should be a square number, e.g. 25, 49, etc)
+    silent: true, //whether to output the co-ordinates to console or only just to file
+};
