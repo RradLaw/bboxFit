@@ -24,7 +24,7 @@ const lonDiff = (c.lonMax - c.lonMin)/rootBox;
 
 console.log(`Making a ${rootBox}x${rootBox} grid (${rootBox*rootBox}) between ${c.latMin},${c.lonMin} and ${c.latMax},${c.lonMax}.`);
 
-let str = "";
+let str = "bbox=";
 
 // Iterate through the grid and output the co-ordinates in the correct format
 for(let i = 0; i < rootBox;i++) {
@@ -36,6 +36,8 @@ for(let i = 0; i < rootBox;i++) {
         str += (`${lonMin},${latMin},${lonMax},${latMax};`);
     }
 }
+
+str=str.substr(0,str.length-1);
 
 // If silent flag isn't up, output everything to log
 if(!c.silent) {
